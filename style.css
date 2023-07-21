@@ -1,0 +1,64 @@
+body{
+    overflow-x: hidden;
+}
+.navbar-brand{
+    margin-right: 33%;
+}
+.nav__flex{
+    border-bottom: 1px solid #aaa;
+}
+.navbar-nav{
+    width: 100%;
+}
+.li__quote{
+    margin-left: 40%;
+}
+.unlim__bg{
+    background-color: #E4F4F6 ;
+    border: 5px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+.unlim__bg::after{
+    position: absolute;
+    content: '';
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#21a7b11f;
+    transition: all 0.5s ease;
+}
+.unlim__bg:hover:after{
+    bottom: 0%;
+
+}
+.image__slider{
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img__filter{
+    transition: all 0.5s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img__filter:hover{
+    filter: brightness(50%);
+}
+.icons{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+.icons .fab{
+    transition: all 0.5s ease;
+}
+.icons .fab:hover{
+    transform: rotatey(180deg);
+    cursor: pointer;
+}
